@@ -214,7 +214,7 @@ try:
                            user=db_user,
                            passwd=db_pass,
                            db = database)
-except PyMySQL.Error as e:
+except pymysql.Error as e:
     print("Error %d: %s" % (e.args[0],e.args[1]))
     sys.exit(1)
 

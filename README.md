@@ -72,5 +72,17 @@ Enter the following command:
 ```
 python WeatherFlow_DisplayHistory.py
 ```
-Go get a cup of coffee and come back in 15 minutes to an hour depending on the speed of the your machine, amount of data you have, and possibly the amount of network bandwidth (if the database isn't local). When the script is done running it will pop up a window on your display using whatever the default picture viewer is (Photos, Preview, xv). If you don't have a display (or even if you do) the resulting picture is saved off in the local directory under the name WeatherPlot.png
+Go get a cup of coffee and come back in 15 minutes to an hour depending on the speed of the your machine, amount of data you have, and possibly the amount of network bandwidth (if the database isn't local). 
+If things are running properly, you'll see lines like this start popping up on your screen:
+```
+Loading libraries
+Initializing
+Loading data
+Processing data
+...building time/date arrays for air data
+...building time/date arrays for sky data
+...loading air image arrays
+...loading sky image arrays
+```
+When the script is done running it will pop up a window on your display using whatever the default picture viewer is (Photos, Preview, xv). If you don't have a display (or even if you do) the resulting picture is saved off in the local directory under the name WeatherPlot.png
 

@@ -7,6 +7,7 @@ The display is broken down into ten panels where each shows a particular weather
 This is a sample of the temperature panel:
 
 ![TemperaturePanel](TemperaturePanel.png)
+I used to use Grafana for this but it pretty consistently caused my browser to freeze up and since I really didn't need a dedicated server for a display I would generate once a day, I decided to write this script instead. 
 
 ## Contents
 **[Requirements](#requirements)**<br>

@@ -4,7 +4,8 @@ It's not a dashboard display per-se because the nature of the display is such th
 like over the course of a day. So the idea is that most people would only want to run this script once a day or perhaps
 several times a week to see the overall weather and trends.
 The display is broken down into ten panels where each shows a particular weather measurement over the entire period. In each panel, every vertical line represents an entire day with local noon in the middle and midnight at the top & bottom. 
-Here's a sample of the 
+Here's a sample of the temperature panel:
+
 ![TemperaturePanel](TemperaturePanel.png)
 
 ## Contents
@@ -101,5 +102,5 @@ Plotting data
 ```
 When the script is done running it will pop up a window on your display using whatever the default picture viewer is (Photos, Preview, xv, etc). If you don't have a display (or even if you do) the resulting picture is saved off in the local directory under the name WeatherPlot.png
 
-Here's a sample image with about 2 1/2 years of data
+Here's a sample of the final image with about 2 1/2 years of data
 ![WeatherPlot](WeatherPlot.png)

@@ -21,16 +21,16 @@ Here's a sample of the temperature panel:
   * having the python executable on your system search path is helpful but not strictly necessary.
 * An SQL database containing the weather data
   * other database types should also work but would require script tweaks. 
-* basic text file editing skills
+* Basic text file editing skills
 
-WeatherFlow Display History is largely platform agnostic and should run on any machine capable of running python 3 with the necessary libraries. The SQL database doesn't have to be local to the platform you're running the script on.
+WeatherFlow Display History is largely platform agnostic and should run on any machine capable of running python with the necessary libraries. The SQL database doesn't have to be local to the platform you're running the script on.
 
 
 ## Installation Instructions
 
 While the script doesn't require being in any particular place on the system, I'd recommend putting it in it's own folder as it does create some files.
 
-1. If, like me, you're not particularly github savy you can download the script by right clicking on this [link](WeatherFlow_DisplayHistory.py) and selecting "Save As"
+1. If, like me, you're not particularly github savy you can download the script by right clicking on this [link](https://raw.githubusercontent.com/StumbleRunner/WeatherFlow_DisplayHistory/master/WeatherFlow_DisplayHistory.py) and selecting "Save As"
 
 2. Open a command prompt and enter the following command:
 ```

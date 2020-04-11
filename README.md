@@ -4,7 +4,7 @@ It's not a dashboard display per-se because the nature of the display is such th
 like over the course of a day. So the idea is that most people would only want to run this script once a day or perhaps
 several times a week to see the overall weather and trends.
 The display is broken down into ten panels where each shows a particular weather measurement over the entire period. In each panel, every vertical line represents an entire day with midnight at the top and the day progressing from top to bottom. 
-Here's a sample of the temperature panel:
+This is a sample of the temperature panel:
 
 ![TemperaturePanel](TemperaturePanel.png)
 
@@ -81,7 +81,7 @@ Enter the following command:
 ```
 python WeatherFlow_DisplayHistory.py
 ```
-Go get a cup of coffee and come back in 5 minutes to an hour depending on the speed of the your machine, amount of data you have, and possibly the amount of network bandwidth (assuming your weather database isn't local). 
+Go get a cup of coffee and come back in 5 minutes to an hour depending on the speed of your machine, the amount of data you have, and possibly the your available network bandwidth (assuming your weather database isn't local). 
 If things are running properly, you'll see lines like this start popping up on your screen:
 ```
 Loading libraries
@@ -109,10 +109,11 @@ When the script is done running it will pop up a window on your display using wh
 
 Here's a sample of the final image with about 2 1/2 years of data
 ![WeatherPlot](WeatherPlot.png)
+(the wonkiness with the humidity and pressure in the first 18 months was the result of a dysfunctional air unit which was replaced)
 
 ## More Advanced Topics
-#Changing the colors and units
-Each plot has it's own color gradient and each color gradient is created by setting color values at particular plot value points. For example, the temperature plot by default has seven temperature points where the color values are set and between those points the colors are interpolated. The seven temperatures are 0,45,60,80,100, and 110(°F) and colors at those points are deep blue, blue, green, yellow, red, and dark red. The colors are defined as RGB triples where the amount red, green, and blue in the color is specied by values from 0-255; so bright red would look like (255,0,0) and dark blue would look like (0,0,64).
+### Changing the colors and units
+Each plot has it's own color gradient and each color gradient is created by setting color values at particular plot value points. For example, the temperature plot, by default, has seven temperature points where the color values are set and between those points the colors are interpolated. The seven temperatures are 0, 45, 60, 80, 100, and 110(°F) and the colors at those points are deep blue, blue, green, yellow, red, and dark red. The colors are defined as RGB triples where the amount red, green, and blue in the color is specied by values from 0-255; so bright red would look like (255,0,0) and dark blue would look like (0,0,64).
 In the script these color gradients and value points are specified in the section labelled # color scale variables
 ```
 TempColorBins=[0,45,60,80,100,110]
@@ -133,5 +134,7 @@ wDirColorBins=[0,45,90,13,180,225,270,315,360]
 wDirColors=[(0,0,255),(0,255,255),(0,255,0),(119,255,0),(255,255,0),(255,119,0),(255,0,0),(255,0,255),(0,0,255)]
 ```
 If your database uses different units than mine (which is an odd mix of imperial and whatever the WeatherFlow default units are) this is where you'd make the change. You can set as many or as few plot value points as you want, but make sure you have a color for every value point or the script will likely crash.
-Special note: The "Feels Like" plot doesn't show absolute temperature, it shows the difference between absolute and feels like. I felt that made it easier to spot those effects rather than trying compare it to the largely similar temperature plot.
+
+Special note: The "Feels Like" plot doesn't show absolute temperature, it shows the difference between absolute and feels like. I felt that made it easier to spot those effects rather than trying to visually compare it to the largely similar temperature plot.
+
 Other special note: There's a variable just below the color gradients section for converting meters per second into miles per hour for the wind speed. If you prefer meters per second, set this value 1.0.

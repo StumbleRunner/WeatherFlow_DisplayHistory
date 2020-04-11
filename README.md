@@ -30,20 +30,20 @@ WeatherFlow Display History is largely platform agnostic and should run on any m
 
 While the script doesn't require being in any particular place on the system, I'd recommend putting it in it's own folder as it does create some files.
 
-1. If, like me, you're not particularly github savy you can download the script by right clicking on this [link](https://raw.githubusercontent.com/StumbleRunner/WeatherFlow_DisplayHistory/master/WeatherFlow_DisplayHistory.py) and selecting "Save As"
+1. If, like me, you're not particularly github savy, you can download the script by right clicking on this [link](https://raw.githubusercontent.com/StumbleRunner/WeatherFlow_DisplayHistory/master/WeatherFlow_DisplayHistory.py) and selecting "Save As"
 
 2. Open a command prompt and enter the following command:
 ```
 python -m pip install --upgrade pip
 ```
-if python isn't on your search path that line (and subsequent python references) may need to have the path to python prepended to the line.
+If python isn't on your search path that line (and subsequent python references) may need to have the path to python pre-pended to the them.
 
 3. Once that process has finished, run: 
 ```
 python -m pip install numpy matplotlib Pillow pymysql pandas
 ```
 
-4. When that's done, open WeatherFlow_DisplayHistory.py in a text editor and go to the section marked #database info (about 23 lines in) and replace the default values with the ones specific for your database.
+4. When that's done, go to the directory where you saved WeatherFlow_DisplayHistory.py and open it in a text editor. Go to the section marked #database info (about 23 lines in) and replace the default values with the ones specific for your database.
 ```
 db_host = "localhost"
 db_user = "user name"
